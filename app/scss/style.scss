@@ -175,6 +175,7 @@
   &__title {
     text-align: center;
     font-size: 48px;
+    line-height: 54px;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     margin: 0 auto 40px;
@@ -339,6 +340,44 @@
     &:hover {
       background: #ff7c21;
     }
+  }
+}
+
+.section-about {
+  background: linear-gradient(to top, #2b2b2b, #1f1f1f);
+  color: #fff;
+  position: relative;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 1400px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    width: 50%;
+    padding-left: 80px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.67;
+    margin: 0;
   }
 }
 
