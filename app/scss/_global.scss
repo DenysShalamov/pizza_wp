@@ -45,6 +45,7 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
   max-width: 100%;
@@ -76,3 +77,26 @@ body {
     border: none;
   }
 }
+
+.phone__item {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 21.5px;
+  padding: 8px 16px;
+  transition: all .2s;
+
+  &:hover {
+    color: #1f1f1f;
+    background: #fff;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+
