@@ -17,6 +17,15 @@
     font-size: 14px;
     padding: 7px 16px;
   }
+
+  .section-about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__content {
+      padding-left: 50px;
+    }
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -114,6 +123,22 @@
     max-width: 100%;
     border-bottom: 2px solid #f7f7f7;
     padding-bottom: 50px;
+  }
+
+  .section-about {
+    &__img {
+      width: 100%;
+    }
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__content {
+      padding-left: 0;
+      width: 500px;
+      max-width: 100%;
+    }
   }
 }
 
