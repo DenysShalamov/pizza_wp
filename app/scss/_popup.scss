@@ -3,7 +3,7 @@
   z-index: 10;
   top: 0;
   left: 0;
-  background: rgba(0,0,0, .7);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -60,15 +60,19 @@
   }
 
   &__subtitle {
-    margin: 0 auto 40px;
+    margin: 0;
     text-align: center;
     font-size: 24px;
-    max-width: 360px;
     line-height: 30px;
   }
 
+  &__subtitle--order {
+    margin: 0 auto 40px;
+    max-width: 360px;
+  }
+
   &__mobile-menu {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
   }
 
   &__phone {

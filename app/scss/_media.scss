@@ -188,7 +188,6 @@
   }
 
   .contacts {
-
     &__start {
       width: 100%;
       order: 1;
@@ -218,7 +217,6 @@
     }
   }
 
-  
   .popup {
     &__inner {
       padding: 0;
@@ -233,6 +231,9 @@
 
     &__subtitle {
       font-size: 18px;
+    }
+
+    &__subtitle--order {
       max-width: 260px;
     }
   }
@@ -240,8 +241,6 @@
   .mobile-menu__link {
     font-size: 20px;
   }
-
-  
 }
 
 @media (max-width: 576px) {
@@ -250,7 +249,7 @@
 
     &__header {
       margin-bottom: 70px;
-    } 
+    }
   }
 
   .page-title {
