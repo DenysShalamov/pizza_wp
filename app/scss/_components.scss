@@ -1,24 +1,19 @@
 .section {
   padding: 110px 0;
+}
 
-  &__header {
-    margin-bottom: 90px;
-  }
+.page-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 54px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin: 0 auto 40px;
 
-  &__title {
-    text-align: center;
-    font-size: 48px;
-    line-height: 54px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    margin: 0 auto 40px;
-  }
-
-  &__title--accent {
+  &--accent {
     color: #ffa650;
   }
 }
-
 
 .btn {
   display: inline-block;
@@ -94,7 +89,7 @@
     fill: #ffa650;
     width: 35px;
     height: 35px;
-    transition: fill .2s, opacity .2s;
+    transition: fill 0.2s, opacity 0.2s;
 
     &:active {
       opacity: 0.7;
@@ -110,7 +105,7 @@
   }
 
   &__icon--inst:hover {
-    fill: #e6369c; 
+    fill: #e6369c;
   }
 
   &__logo {
@@ -127,15 +122,15 @@
   width: 50px;
   height: 50px;
   display: inline-block;
-  transition: transform .2s, opacity .2s;
+  transition: transform 0.2s, opacity 0.2s;
 
   &:hover {
     transform: scale(1.1);
   }
 
   &:active {
-    transform: scale(.9);
-    opacity: .8s;
+    transform: scale(0.9);
+    opacity: 0.8s;
   }
 
   &::before,
@@ -169,7 +164,7 @@
     font-weight: 900;
     font-size: 24px;
     text-align: center;
-    transition: background .2s, color .2s, opacity .2s;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
   }
 
   &__link:hover {
@@ -178,6 +173,56 @@
   }
 
   &__link:active {
-    opacity: .8;
+    opacity: 0.8;
+  }
+}
+
+.order {
+  max-width: 310px;
+  margin: 0 auto;
+
+  &__img {
+    width: 186px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin: 0 0 5px;
+    text-align: center;
+  }
+
+  &__size {
+    margin: 0 0 30px;
+    color: #a2a2a2;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+.form {
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 20px 28px;
+    background: #f7f7f7;
+    border-radius: 32px;
+    margin-bottom: 8px;
+    border: 2px solid transparent;
+    outline: none;
+  }
+
+  &__input:focus {
+    border-color: #ffa650;
+  }
+
+  &__btn {
+    width: 100%;
+    background: #ffa650;
+    padding: 22px 28px;
+    border-radius: 50px;
   }
 }

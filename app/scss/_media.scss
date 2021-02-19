@@ -241,13 +241,13 @@
   .section {
     padding: 90px 0;
 
-    &__title {
-      font-size: 36px;
-    }
-
     &__header {
       margin-bottom: 70px;
     } 
+  }
+
+  .page-title {
+    font-size: 36px;
   }
 
   .section-top__info {
