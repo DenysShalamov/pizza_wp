@@ -1,5 +1,11 @@
 .header-page {
-  position: absolute;
+
+  &--active .header-page__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -38,7 +44,7 @@
     font-size: 18px;
     font-weight: 900;
     position: relative;
-    transition: all 0.2s;
+    transition: color 0.2s, padding .4s;
 
     &:hover {
       .header-page__text {
@@ -79,6 +85,7 @@
 
 .btn-menu {
   background: none;
+  outline: none;
   border-radius: 0;
   border: 0;
   cursor: pointer;
