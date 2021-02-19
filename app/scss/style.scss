@@ -381,4 +381,104 @@
   }
 }
 
+.section-contacts {
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(../images/contacts/bg.jpg) no-repeat;
+      background-size: cover;
+      width: 672px;
+      height: 397px;
+      bottom: -100px;
+      right: -350px;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__start {
+    width: 50%;
+  }
+
+  &__end {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  &__map {
+    height: 450px;
+    background: #fef0b4;
+  }
+
+  &__item {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  &__text {
+   font-size: 18px;
+  }
+
+  &__phone {
+    transition: color .2s;
+    &:hover {
+      color: #ffa650;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+
+  &__item {
+    margin-right: 7px;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__icon {
+    fill: #ffa650;
+    width: 35px;
+    height: 35px;
+    transition: fill .2s, opacity .2s;
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &__icon--vk:hover {
+    fill: #5078a5;
+  }
+
+  &__icon--fb:hover {
+    fill: #3e58a1;
+  }
+
+  &__icon--inst:hover {
+    fill: #e6369c; 
+  }
+
+  &__logo {
+    fill: #fff;
+  }
+}
+
 @import "media";
