@@ -204,6 +204,7 @@
 }
 
 .form {
+  text-align: center;
   &__input {
     display: block;
     width: 100%;
@@ -224,5 +225,6 @@
     background: #ffa650;
     padding: 22px 28px;
     border-radius: 50px;
+    box-shadow: none;
   }
 }
