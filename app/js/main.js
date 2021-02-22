@@ -1,45 +1,10 @@
 ; (function () {
 
-  // header
+  window.myLib = {};
 
-  if (window.matchMedia('(max-width: 992px)').matches) {
-    return;
-  };
+  window.myLib.body = document.querySelector('body');
 
-  var headerPage = document.querySelector('.header-page');
-
-
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 0) {
-      headerPage.classList.add('header-page--active');
-    } else {
-      headerPage.classList.remove("header-page--active");
-    }
-  });
-
-  // header
-
-  // popup
-
-  var body = document.querySelector('body');
-
-
-
-  var closestItemByClass = function (item, className) {
-    var node = item;
-
-    while (node) {
-
-      if (node.classList.contains(className)) {
-        return node;
-      };
-      node = node.parentElement;
-    };
-
-    return null;
-  };
-
-  var closestAttr = function (item, attr) {
+  window.myLib.closestAttr = function (item, attr) {
     var node = item;
 
     while (node) {
@@ -54,97 +19,21 @@
     return null;
   };
 
-  var showPopup = function (target) {
-    target.classList.add('popup--active');
-  };
+  window.myLib.closestItemByClass = function (item, className) {
+    var node = item;
 
-  var closePopup = function (target) {
-    target.classList.remove('popup--active');
-  };
+    while (node) {
 
-  var toggleScroll = function () {
-    body.classList.toggle('no-scroll');
-  };
-
-  body.addEventListener('click', function (e) {
-    var target = e.target;
-    var popupClass = closestAttr(target, 'data-popup');
-
-    if (popupClass === null) {
-      return;
-    }
-
-    e.preventDefault();
-
-    var popup = document.querySelector('.' + popupClass);
-
-    if (popup) {
-      showPopup(popup);
-      toggleScroll();
-    }
-  });
-
-
-  body.addEventListener('click', function (e) {
-    var target = e.target;
-
-    if (target.classList.contains('popup-close') || target.classList.contains('popup__inner')) {
-
-      var popup = closestItemByClass(target, 'popup');
- 
-      closePopup(popup);
-      toggleScroll();
+      if (node.classList.contains(className)) {
+        return node;
+      };
+      node = node.parentElement;
     };
 
-  });
+    return null;
+  };
 
-
-  body.addEventListener('keydown', function (e) {
-
-    if (e.key !== "Escape") {
-      return;
-    }
-
-    var popup = document.querySelector('.popup.popup--active');
-
-    if (popup) {
-      closePopup(popup);
-      toggleScroll();
-    }
-
-  });
-  // popup
-
-  // scroll
-
-  var body = document.querySelector('body');
-
-  var scroll = function (target) {
-    var targetTop = target.getBoundingClientRect().top;
-    var scrollTop = window.pageYOffset; 
-    var targetOffsetTop = targetTop + scrollTop;
-    var headerOffset = document.querySelector('.header-page').clientHeight;
-
-    window.scrollTo(0, targetOffsetTop - headerOffset + 12);
-  }
-
-  body.addEventListener('click', function(e) {
-
-    var target = e.target;
-    var scrollToItemClass = closestAttr(target, 'data-scroll');
-
-    if (scrollToItemClass === null) {
-      return;
-    } 
-    e.preventDefault();
-
-    var scrollToItem = document.querySelector('.' + scrollToItemClass);
-
-    if (scrollToItem) {
-      scroll(scrollToItem);
-    }
-  });
-
-
-  //scroll
+  window.myLib.toggleScroll = function () {
+    myLib.body.classList.toggle('no-scroll');
+  };
 })();
