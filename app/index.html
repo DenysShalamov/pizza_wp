@@ -500,14 +500,15 @@
           <div class="order">
             <img class="order__img" src="images/catalog/1.png" alt="">
             <h3 class="order__title">
-              <span>Салями</span>
-              <span>850</span> &#8381;
+              <span class="order-product-title">Салями</span>
+              <span class="order-product-price">850</span> &#8381;
             </h3>
             <p class="order__size">35 см</p>
             <form class="form">
-              <input type="hidden" name="пицца">
-              <input type="hidden" name="цена">
-              <input type="hidden" name="размер">
+              <input class="order-info-title" type="hidden" name="пицца">
+              <input class="order-info-price" type="hidden" name="цена">
+              <input class="order-info-size" type="hidden" name="размер">
+
               <input class="form__input" type="text" name="имя" placeholder="Имя" required>
               <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
               <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
@@ -565,6 +566,7 @@
   <script src="js/popup.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/catalog.js"></script>
+  <script src="js/product.js"></script>
   
 </body>
 
