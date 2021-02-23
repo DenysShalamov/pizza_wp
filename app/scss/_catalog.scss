@@ -127,6 +127,11 @@
     border-radius: 21px;
   }
 
+  &__size:hover {
+    color: #a2a2a2;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  }
+
   &__size--active {
     color: #a2a2a2;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
