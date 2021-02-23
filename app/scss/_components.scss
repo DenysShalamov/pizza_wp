@@ -22,7 +22,7 @@
   padding: 18px 20px;
   width: 240px;
   max-width: 100%;
-  outline: none;
+  
   border-radius: 28px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -116,7 +116,7 @@
 .btn-close {
   position: relative;
   border: none;
-  outline: none;
+  
   cursor: pointer;
   background: none;
   width: 50px;
@@ -214,7 +214,7 @@
     border-radius: 32px;
     margin-bottom: 8px;
     border: 2px solid transparent;
-    outline: none;
+    
   }
 
   &__input:focus {
