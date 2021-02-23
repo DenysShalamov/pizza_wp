@@ -74,7 +74,7 @@ function js() {
 }
 
 function images() {
-  return src('app/img/**/*.*')
+  return src('app/images/**/*.*')
     .pipe(imagemin(
       [
         imagemin.gifsicle({ interlaced: true }),
@@ -88,7 +88,7 @@ function images() {
         })
       ]
     ))
-    .pipe(dest('dist/img'))
+    .pipe(dest('dist/images'))
 }
 
 //make changes
@@ -104,7 +104,7 @@ function build() {
     'app/fonts/**/*',
     'app/js/*.js',
     'app/*.html',
-    'app/img/*.*'
+    'app/images/*.*'
   ], { base: 'app' })
     .pipe(dest('dist'))
 }

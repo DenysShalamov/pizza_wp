@@ -7,7 +7,7 @@
 
 //   var formSend = function(form) {
 //     var xhr = new XMLHttpRequest();
-//     var url = '../mail/mail.php';
+//     var url = 'app/mail/mail.php';
 
 //     xhr.open('POST', url);
 //     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
