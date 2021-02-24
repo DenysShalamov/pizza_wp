@@ -26,16 +26,15 @@
 
   }
 
-
   var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy",
   });
 })();
 // libs
 
-
+//  myLib
 ; (function () {
-  //  myLib
+  
   window.myLib = {};
 
   window.myLib.body = document.querySelector('body');
@@ -72,10 +71,11 @@
   window.myLib.toggleScroll = function () {
     myLib.body.classList.toggle('no-scroll');
   };
+})();
+// myLib
 
-  // myLib
-
-  // header
+// header
+; (function () {
   if (window.matchMedia('(max-width: 992px)').matches) {
     return;
   };
@@ -90,9 +90,11 @@
       headerPage.classList.remove("header-page--active");
     }
   });
-  // header
+})();
+// header
 
-  // scroll
+// scroll
+; (function () {
   var scroll = function (target) {
     var targetTop = target.getBoundingClientRect().top;
     var scrollTop = window.pageYOffset;
@@ -118,9 +120,11 @@
       scroll(scrollToItem);
     }
   });
-  // scroll
+})();
+// scroll
 
-  // popup
+// popup
+; (function () {
   var showPopup = function (target) {
     target.classList.add('popup--active');
   };
@@ -176,9 +180,11 @@
     }
 
   });
-  // popup
+})();
+// popup
 
-  // catalog
+// catalog
+; (function () {
   var catalogSection = document.querySelector('.section-catalog');
 
   if (catalogSection === null) {
@@ -237,9 +243,11 @@
 
     updateChildren(catalog, filteredItems);
   })
-  // catalog
+})();
+// catalog
 
-  // product
+// product
+; (function () {
   var catalog = document.querySelector('.catalog');
 
   if (catalog === null) {
@@ -301,9 +309,11 @@
     }
 
   });
-  // product
+})();
+// product
 
-  // form
+// form
+// ; (function () {
   // var forms = document.querySelectorAll('.form-send');
 
   // if (forms.length === 0) {
@@ -332,5 +342,35 @@
   //     formSend(form);
   //   });
   // }
-  // form
+// })();
+// form
+
+// map
+; (function () {
+
+  var mapLoad = function() {
+    var iframe = document.createElement('iframe');
+    var map = document.querySelector('.contacts__map');
+    iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.9051438292327!2d37.710615315393!3d55.7948849962137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535093ad7d72b%3A0x15c200dbca057794!2z0J_RgNC10L7QsdGA0LDQttC10L3RgdC60LDRjyDQv9C7LiwgOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRltGPLCAxMDcwNjE!5e0!3m2!1suk!2sua!4v1614072983739!5m2!1suk!2sua";
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.style ="border:0;"
+    map.appendChild(iframe);
+    
+  };
+
+  var sectionContacts = document.querySelector('.section-contacts');
+  var checkMapInit = function() {
+    var sectionContactsTop = sectionContacts.getBoundingClientRect().top;
+    var scrollTop = window.pageYOffset;
+    var sectionContactsOffsetTop =  scrollTop + sectionContactsTop;
+
+    if (scrollTop + window.innerHeight > sectionContactsOffsetTop) {
+      mapLoad();
+      window.removeEventListener('scroll', checkMapInit);
+    }
+  };
+  window.addEventListener('scroll', checkMapInit);
 })();
+// map
+
