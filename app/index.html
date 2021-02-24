@@ -17,24 +17,24 @@
     <div class="container header-page__container">
       <div class="header-page__logo">
         <div class="logo">
-          <img class="logo__img" src="images/common/logo.svg" alt="" width="127" height="21">
+          <img class="logo__img lazy" data-src="images/common/logo.svg" alt="" width="127" height="21">
         </div>
       </div>
       <div class="header-page__menu">
         <nav class="header-page__nav">
           <ul class="header-page__list">
             <li class="header-page__item">
-              <a href="#" class="header-page__link" data-scroll ="section-catalog">
-                <span class="header-page__text" >пицца</span>
+              <a href="#" class="header-page__link" data-scroll="section-catalog">
+                <span class="header-page__text">пицца</span>
               </a>
             </li>
             <li class="header-page__item">
-              <a href="#" class="header-page__link" data-scroll ="section-about">
+              <a href="#" class="header-page__link" data-scroll="section-about">
                 <span class="header-page__text">о нас</span>
               </a>
             </li>
             <li class="header-page__item">
-              <a href="#contacts" class="header-page__link" data-scroll ="section-contacts">
+              <a href="#contacts" class="header-page__link" data-scroll="section-contacts">
                 <span class="header-page__text">контакты</span>
               </a>
             </li>
@@ -44,7 +44,7 @@
           <a class="phone__item header-page__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
         </div>
         <div class="header-page__hamburger">
-          <button class="btn-menu" type="button" data-popup = "popup-menu">
+          <button class="btn-menu" type="button" data-popup="popup-menu">
             <span class="btn-menu__box">
               <span class="btn-menu__inner"></span>
             </span>
@@ -57,12 +57,12 @@
 
   <!--  section-top  -->
 
-  <section class="section-top">
+  <section class="section-top lazy" data-bg="images/top/section-top__bg-img.webp" data-bg-replace-webp="images/top/section-top__bg-img.jpg">
     <div class="section-top__container container">
       <p class="section-top__info">от итальянского повара</p>
       <h1 class="section-top__title">Лучшая пицца в Москве</h1>
       <div class="section-top__btn">
-        <button class="btn" type="button" data-scroll ="section-catalog">Выбрать</button>
+        <button class="btn" type="button" data-scroll="section-catalog">Выбрать</button>
       </div>
     </div>
   </section>
@@ -96,7 +96,10 @@
       <div class="catalog">
         <div class="catalog__item" data-category="mushrooms">
           <div class="product catalog__product">
-            <img src="images/catalog/1.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/1.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/1.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Салями</h3>
               <p class="product__text">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и
@@ -104,9 +107,10 @@
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "850" class="product__size  product__size--active" type="button">35см</button>
-                <button data-product-size-price = "750" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "650" class="product__size" type="button">25см</button>
+                <button data-product-size-price="850" class="product__size  product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="750" class="product__size" type="button">30см</button>
+                <button data-product-size-price="650" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -120,7 +124,10 @@
         </div>
         <div class="catalog__item" data-category="meat">
           <div class="product catalog__product">
-            <img src="images/catalog/2.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/2.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/2.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Хит</h3>
               <p class="product__text">Картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и
@@ -128,9 +135,10 @@
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "950" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "850" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "750" class="product__size" type="button">25см</button>
+                <button data-product-size-price="950" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="850" class="product__size" type="button">30см</button>
+                <button data-product-size-price="750" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -145,7 +153,10 @@
 
         <div class="catalog__item" data-category="cheese">
           <div class="product catalog__product">
-            <img src="images/catalog/3.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/3.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/3.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Ветчина-грибы</h3>
               <p class="product__text">Салями, картофель и морковь, огурцы маринованные, моцарелла, цыпленок, ветчина и
@@ -153,9 +164,10 @@
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "880" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "780" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "680" class="product__size" type="button">25см</button>
+                <button data-product-size-price="880" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="780" class="product__size" type="button">30см</button>
+                <button data-product-size-price="680" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -170,16 +182,20 @@
 
         <div class="catalog__item" data-category="cheese">
           <div class="product catalog__product">
-            <img src="images/catalog/4.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/4.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/4.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Карбонара</h3>
               <p class="product__text">Салями, курица, моцарелла, говядина, ветчина и французский соус </p>
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "1250" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "1150" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "1050" class="product__size" type="button">25см</button>
+                <button data-product-size-price="1250" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="1150" class="product__size" type="button">30см</button>
+                <button data-product-size-price="1050" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -193,16 +209,20 @@
         </div>
         <div class="catalog__item" data-category="mushrooms">
           <div class="product catalog__product">
-            <img src="images/catalog/5.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/5.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/5.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Фирменная</h3>
               <p class="product__text">Томатно-сливочный соус, бекон, моцарелла</p>
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "890" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "790" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "690" class="product__size" type="button">25см</button>
+                <button data-product-size-price="890" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="790" class="product__size" type="button">30см</button>
+                <button data-product-size-price="690" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -216,16 +236,20 @@
         </div>
         <div class="catalog__item" data-category="meat">
           <div class="product catalog__product">
-            <img src="images/catalog/6.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/6.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/6.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Ассорти</h3>
               <p class="product__text">Картофель моцарелла, цыпленок, грибы, ветчина и французский соус</p>
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "850" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "750" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "650" class="product__size" type="button">25см</button>
+                <button data-product-size-price="850" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="750" class="product__size" type="button">30см</button>
+                <button data-product-size-price="650" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -240,7 +264,10 @@
 
         <div class="catalog__item" data-category="cheese">
           <div class="product catalog__product">
-            <img src="images/catalog/7.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/7.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/7.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Л-01</h3>
               <p class="product__text">Томаты, моцарелла, цыпленок, ветчина и французский соус, секректный ингредиент
@@ -248,9 +275,10 @@
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "920" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "820" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "720" class="product__size" type="button">25см</button>
+                <button data-product-size-price="920" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="820" class="product__size" type="button">30см</button>
+                <button data-product-size-price="720" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -265,16 +293,20 @@
 
         <div class="catalog__item" data-category="cheese">
           <div class="product catalog__product">
-            <img src="images/catalog/8.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/8.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/8.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Три сыра</h3>
               <p class="product__text">Чеддер, камамбер, эдам </p>
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "990" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "890" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "790" class="product__size" type="button">25см</button>
+                <button data-product-size-price="990" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="890" class="product__size" type="button">30см</button>
+                <button data-product-size-price="790" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -289,7 +321,10 @@
 
         <div class="catalog__item" data-category="mushrooms">
           <div class="product catalog__product">
-            <img src="images/catalog/9.png" alt="" class="product__img">
+            <picture>
+              <source type="image/webp" data-srcset="images/catalog/9.webp" />
+              <img alt="" class="product__img lazy" data-src="images/catalog/9.png"/>
+            </picture>
             <div class="product__content">
               <h3 class="product__title">Мясная</h3>
               <p class="product__text">Курица, говядина, сливочный соус, салями, огурцы маринованные, томаты, грибы,
@@ -297,9 +332,10 @@
             </div>
             <footer class="product__footer">
               <div class="product__sizes">
-                <button data-product-size-price = "950" class="product__size product__size--active" type="button">35см</button>
-                <button data-product-size-price = "850" class="product__size" type="button">30см</button>
-                <button data-product-size-price = "750" class="product__size" type="button">25см</button>
+                <button data-product-size-price="950" class="product__size product__size--active"
+                  type="button">35см</button>
+                <button data-product-size-price="850" class="product__size" type="button">30см</button>
+                <button data-product-size-price="750" class="product__size" type="button">25см</button>
               </div>
               <div class="product__bottom">
                 <div class="product__price">
@@ -322,7 +358,10 @@
   <!--  section-about  -->
 
   <section class="section section-about" id="about">
-    <img src="images/about/bg.jpg" alt="" class="section-about__img">
+    <picture>
+      <source type="image/webp" data-srcset="images/about/bg.webp" />
+      <img alt="" class="section-about__img lazy" data-src="images/about/bg.jpg"/>
+    </picture>
     <div class="container section-about__container">
       <div class="section-about__content">
         <h2 class="page-title section-about__title">О нас</h2>
@@ -336,14 +375,18 @@
 
   <!--  section-contacts  -->
   <section class="section section-contacts" id="contacts">
+
     <div class="container section-contacts__container">
+      <div class="section-contacts__img lazy" data-bg="images/contacts/bg.webp" data-bg-replace-webp='images/contacts/bg.jpg'></div>
       <header class="section__header">
         <h2 class="page-title section-contacts__title">Контакты</h2>
       </header>
       <div class="contacts">
         <div class="contacts__start">
           <div class="contacts__map">
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.9051438292327!2d37.710615315393!3d55.7948849962137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535093ad7d72b%3A0x15c200dbca057794!2z0J_RgNC10L7QsdGA0LDQttC10L3RgdC60LDRjyDQv9C7LiwgOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRltGPLCAxMDcwNjE!5e0!3m2!1suk!2sua!4v1614072983739!5m2!1suk!2sua" width="100%" height="100%"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.9051438292327!2d37.710615315393!3d55.7948849962137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535093ad7d72b%3A0x15c200dbca057794!2z0J_RgNC10L7QsdGA0LDQttC10L3RgdC60LDRjyDQv9C7LiwgOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRltGPLCAxMDcwNjE!5e0!3m2!1suk!2sua!4v1614072983739!5m2!1suk!2sua"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
         <div class="contacts__end">
@@ -428,13 +471,13 @@
           <nav class="mobile-menu popup__mobile-menu">
             <li class="mobile-menu__item">
               <ul class="mobile-menu__list">
-                <a href="" class="mobile-menu__link popup-close" data-scroll ="section-catalog">Пицца</a>
+                <a href="" class="mobile-menu__link popup-close" data-scroll="section-catalog">Пицца</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link popup-close" data-scroll ="section-about">О нас</a>
+              <a href="" class="mobile-menu__link popup-close" data-scroll="section-about">О нас</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="" class="mobile-menu__link popup-close" data-scroll ="section-contacts">Контакты</a>
+              <a href="" class="mobile-menu__link popup-close" data-scroll="section-contacts">Контакты</a>
             </li>
             </ul>
           </nav>
@@ -553,7 +596,8 @@
         <div class="popup__content">
           <button class="btn-close popup__btn-close popup-close"></button>
           <h2 class="page-title popup__title">Произошла ошибка</h2>
-          <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="+79999999999" class="">+7 (999) 999-99-99</a></p>
+          <p class="popup__subtitle">Пожалуйста, сделайте заказ по номеру <a class="popup__link" href="+79999999999"
+              class="">+7 (999) 999-99-99</a></p>
         </div>
       </div>
     </div>
@@ -563,15 +607,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/popup.js"></script>
-  <script src="js/scroll.js"></script>
-  <script src="js/catalog.js"></script>
-  <script src="js/product.js"></script>
-  <script src="js/form.js"></script>
-  
+
 </body>
 
 </html>

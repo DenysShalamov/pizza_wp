@@ -1,6 +1,6 @@
 @media (max-width: 1800px) {
   .section-contacts {
-    &__container::before {
+    &__img {
       right: -250px;
     }
   }
@@ -8,7 +8,7 @@
 
 @media (max-width: 1600px) {
   .section-contacts {
-    &__container::before {
+    &__img {
       right: -150px;
       bottom: -200px;
     }
@@ -17,7 +17,7 @@
 
 @media (max-width: 1400px) {
   .section-contacts {
-    &__container::before {
+    &__img {
       right: -100px;
     }
   }
@@ -25,7 +25,7 @@
 
 @media (max-width: 1300px) {
   .section-contacts {
-    &__container::before {
+    &__img {
       right: -50px;
     }
   }
@@ -62,8 +62,8 @@
   }
 
   .section-contacts {
-    &__container::before {
-      content: none;
+    &__img {
+      display: none;
     }
   }
 }
